@@ -1,6 +1,7 @@
 package main
 
 import (
+	"Imgrabber/internal/downloader"
 	"Imgrabber/internal/scraper"
 	"fmt"
 	"log"
@@ -18,4 +19,6 @@ func main() {
 		fmt.Println(url)
 	}
 	fmt.Println("----------------------")
+
+	downloader.DownloadImages(imageURLs)
 }
